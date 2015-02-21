@@ -1,0 +1,70 @@
+
+*{margin:0;padding:0;}
+
+#main-box{
+	border:1px solid #000;
+ 	max-width:1000px;
+ 	min-width: 970px;
+ 	height:240px;
+ 	margin:50px auto;
+ 	position:relative;
+ 	overflow:hidden;
+ 	cursor:pointer;
+}
+
+#filter{
+	width:100%;
+ 	max-width:1000px;
+ 	height:240px;
+ 	margin:0px auto;
+ 	position:absolute;
+ 	z-index:4;
+}
+
+#tvContainer{
+	position: relative;
+	width: 400px;
+	height: 180px;
+	z-index: 4;
+	top:60px;
+	left:6%;
+	overflow: hidden;
+}
+#tvContainer>img{
+	position: absolute;
+	bottom:0;
+}
+/*==================
+I set images to position absolute so they can 
+overlap each other and then from there I play with z-index and pixels 
+to give the appropriate X & Y
+====================*/
+#main-box>.ab{position:absolute;}
+
+#tvFrame{z-index: 3}
+
+#cover{z-index: 1; left: 10%;margin-top: -60px;}
+
+iframe{margin-left: 35px;margin-top: 16px;}
+
+#palm{left:-80px; }
+
+#deep{z-index:-1;}
+
+#logo{right:20px;top:10px;}
+
+#logo1{right:10%;top: 40%;}
+
+#shark{
+	right:-19%;
+	top:40px;
+	z-index:1;
+}
+
+#wood{
+	z-index:4;
+	position: relative!important;
+	float: right;
+	transition:margin-top 2s ease-out;
+    margin-top:90px;
+}
